@@ -5,6 +5,7 @@ $(function () {
   var uniqueId = 1;
   $('.new_volume_price_row.spree_add_fields').off('click').on('click', function() {
     var target = $(this).data("target");
+    alert('for test only');
     var new_table_row = $(target + ' tr:visible:last').clone();
     var new_id = new Date().getTime() + (uniqueId++);
     new_table_row.find("input, select").each(function () {
